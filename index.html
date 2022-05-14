@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using API's</title>
+    <style>
+        *{
+            background-color: black;
+        }
+        img{
+            width: 400px;
+            height: 400px;
+            border: 2px solid red;
+        }
+        .all{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 8.9em;
+            flex-wrap: wrap;
+            background-color: orange;
+            
+        }
+        .catbtn{
+            border: 2px solid black;
+            
+        }
+        .catdiv{
+            display: flex;
+            flex-direction: column;
+        }
+        .dogdiv{
+            display: flex;
+            flex-direction: column;
+        }
+        #dogbtn{
+            color: white; background-color: blue; padding: 10px; cursor: pointer; 
+        }
+        #catbtn{
+            color: white; background-color: blue; padding: 10px; cursor: pointer; 
+        }
+        #dogbtn:hover{
+            background-color: yellow;
+            color: red;
+        }
+        #catbtn:hover{
+            background-color: yellow;
+            color: red;
+        }
+        
+
+
+    </style>
+</head>
+<body>
+    <h1 style="display:flex; align-items: center; justify-content: center; color: white;">Get Cats and Dogs</h1>
+    <div class="all">
+        
+        <div class="catdiv">
+    <div class="cat" id="cat">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/77/Avatar_cat.png" alt="" id="catimg">
+    </div>
+
+    <button id="catbtn">Get random Cat</button>
+</div>
+
+    <div class="dogdiv">
+    <div class="dog" id="dog">
+        <img src="https://i.pinimg.com/originals/0a/42/7f/0a427f8c57082a1d1f0da6538acabf32.jpg" alt="">
+
+    </div>
+    <button id="dogbtn">Get random Dog</button>
+</div>
+</div>
+
+    <script src="app.js"></script>
+</body>
+</html>
